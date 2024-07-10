@@ -1,7 +1,7 @@
-
-  .landing-page {
+/* General Styles */
+.landing-page {
     width: 100%;
-    padding:30px;
+    padding: 30px;
   }
   
   /* Header */
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 20px;
     border-bottom: 2px #3a99d8;
-    color: #3a99d8
+    color: #3a99d8;
   }
   
   .header .logo img {
@@ -21,10 +21,9 @@
   .navbar {
     display: flex;
     gap: 15px;
-  }
-
+    animation:scale-up-vertical-top 0.2s linear} @keyframes scale-up-vertical-top{0%{transform:scaleY(.4);transform-origin:center top}100%{transform:scaleY(1);transform-origin:center top}}
   .navbar a {
-    color:#3a99d8;
+    color: #3a99d8;
     font-size: 16px;
     text-decoration: none;
     padding: 8px 15px;
@@ -37,18 +36,29 @@
     color: white;
   }
   
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #3a99d8;
+    cursor: pointer;
+  }
+  
   /* Hero Section */
   .hero {
     margin-top: 30px;
     margin-bottom: 10px;
     position: relative;
+    padding: 40px;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background-color:  #327ab7;
+    background-color: #327ab7;
     color: white;
-}
+  }
   
   .hero img {
     width: 40%;
@@ -56,16 +66,8 @@
     display: block;
   }
   
-  .hero .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .hero  h1 {
+  .hero h1 {
     font-size: 2.4rem;
-    padding: 40px;
     margin-bottom: 20px;
   }
   
@@ -241,5 +243,60 @@
   
   .footer .footer-logo p {
     margin: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+.close-menu{
+    border: none;
+    background-color: none;
+}
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero img {
+      width: 80%;
+    }
+  
+    .about .imagendos {
+      max-width: 100%;
+    }
+  
+    .solutions .solution-items {
+      flex-direction: column;
+    }
+  
+    .clients .client-logos {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar a {
+      font-size: 14px;
+    }
+  
+    .hero h1 {
+      font-size: 1.4rem;
+      padding: 20px;
+    }
   }
   
