@@ -1,0 +1,101 @@
+/* Add your styles here */
+
+
+  .landing-page {
+    text-align: center;
+    color: #333;
+  }
+
+  .description{
+    font-size: 50px;
+  }
+
+  .button-fill{
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    height: 90px;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  .hero-text button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .about {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .workflow,
+  .solutions,
+  .clients {
+    padding: 50px 20px;
+  }
+  
+  .solution-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .solution-item {
+    width: 30%;
+  }
+  
+  .clients .client-logos img {
+    width: 20%;
+    margin: 10px;
+  }
+  
+  .footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer .footer-logo img {
+    height: 50px;
+  }
+  
