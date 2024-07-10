@@ -19,11 +19,6 @@
   }
   
   .navbar {
-    position: absolute;
-    height: 300px;
-    z-index: 99999;
-    margin-top: 100px;
-    display: flex;
     background-color:white;
      gap: 15px;
     animation:scale-up-vertical-top 0.2s linear} @keyframes scale-up-vertical-top{0%{transform:scaleY(.4);transform-origin:center top}100%{transform:scaleY(1);transform-origin:center top}}
@@ -300,6 +295,15 @@
   }
   
   @media (max-width: 480px) {
+    .navbar {
+        position: absolute;
+        height: 300px;
+        z-index: 99999;
+        margin-top: 100px;
+        display: flex;
+        background-color:white;
+         gap: 15px;
+    }
     .navbar a {
       font-size: 14px;
     }
